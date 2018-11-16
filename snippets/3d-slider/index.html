@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./swiper.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>3D Responsive Slider</title>
+  </head>
+  <body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="./images/city-cars-road-houses.jpg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Jonh Doe <br> <span>Web Designer</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="./images/pexels-photo-221433.jpeg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Some City <br> <span>City of Lights</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="./images/pexels-photo-373912.jpeg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Some City <br> <span>City of Lights</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="./images/pexels-photo-373965.jpeg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Some City <br> <span>City of Lights</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="./images/pexels-photo-416676.jpeg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Some City <br> <span>City of Lights</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="./images/pexels-photo-449627.jpeg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Some City <br> <span>City of Lights</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="./images/pexels-photo-533923.jpeg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Some City <br> <span>City of Lights</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="./images/pexels-photo-634010.jpeg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Some City <br> <span>City of Lights</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="./images/pexels-photo-830891.jpeg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Some City <br> <span>City of Lights</span></h3>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="imgBx">
+            <img src="./images/pexels-photo-373965.jpeg" alt="" />
+          </div>
+          <div class="details">
+            <h3>Somw City <br> <span>City of Lights</span></h3>
+          </div>
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="./swiper.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 400,
+          modifier: 1,
+          slideShadows: true
+        },
+        pagination: {
+          el: ".swiper-pagination"
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+body {
+    background: url('./pexels-photo-731082.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+
+.rain {
+    background: url('./rain.png');
+    height: 100vh;
+    animation: rain 1s linear infinite;
+}
+
+.rain:before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    opacity: 0;
+    position: absolute;
+    animation: ligth 2s linear infinite;
+}
+
+@keyframes rain {
+
+    0% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 85% 100%;
+    }
+}
+@keyframes ligth {
+
+    0% {
+        opacity: 0;
+    }
+    10% {
+        opacity: 0;
+    }
+    15% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }    
+    100% {
+        opacity: 1;
+    }
+}

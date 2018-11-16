@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,400");
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+}
+
+div[class*="snippet-container"] {
+  /*contains*/
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.title {
+  text-transform: uppercase;
+}
+
+/* Collapsable Search Box Begin*/
+.search-box-collapsable-snippet-container {
+  height: 80px;
+}
+.search-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2c3e50;
+  height: 60px;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+.search-btn {
+  color: #e84118;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  color: #fff;
+  font-size: 16px;
+  line-height: 40px;
+  transition: 0.4s;
+  padding: 0;
+  width: 0;
+}
+
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+  background: #fff;
+}
+/* Collapsable Search Box End*/
+
+
+
+/* Search Group Box Begin*/
+.search-group-box-snippet-container {
+  height: 80px;
+  background-color: #3f51b5 !important;
+}
+.search-group-box {
+  position: absolute;
+  width: 500px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.search-group-box input {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.search-group-box input[type="text"],
+.search-group-box input[type="submit"] {
+  height: 50px;
+  padding: 0 25px;
+  border: none;
+  outline: none;
+}
+.search-group-box input[type="text"] {
+  background: #fff;
+  width: 340px;
+  border-radius: 25px 0 0 25px;
+}
+.search-group-box input[type="submit"] {
+  left: -5px;
+  width: 150px;
+  border-radius: 0 25px 25px 0;
+  background-color: #ffc107;
+  cursor: pointer;
+  color: #fff;
+}
+.search-group-box input[type="submit"]:hover {
+  background-color: #ff5722;
+}
+/* Search Group Box End*/
