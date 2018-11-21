@@ -1,0 +1,41 @@
+.input-with-icon {
+  position: relative;
+}
+.input-with-icon input[type="text"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s;
+  padding-left: 40px;
+  display: inline-block;
+}
+
+.input-with-icon input[type="text"]:focus {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+}
+.input-with-icon i {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: all 0.3s;
+}
+.input-with-icon input[type="text"]:focus + i {
+  color: dodgerblue;
+}
+.input-with-icon.icon-with-bg i {
+    background-color: #aaa;
+    color: #fff;
+    padding: 9px 5px;
+    border-radius: 4px 0 0 4px;
+}
+.input-with-icon.icon-with-bg input[type="text"]:focus + i {
+    color: #fff;
+    background-color: dodgerblue;
+  }
